@@ -1,0 +1,25 @@
+{
+
+  "description": "Forget office.com cookies",
+  "manifest_version": 2,
+  "name": "forget-mso",
+  "version": "1.0",
+  "homepage_url": "https://github.com/kernelguy/forget-mso-ext",
+  "icons": {
+    "48": "icons/mso-trash.svg"
+  },
+
+  "background": {
+    "scripts": ["forget-mso.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icons/mso-trash.svg",
+    "default_title": "Forget office.com!"
+  },
+
+  "permissions": [
+    "browsingData",
+    "storage"
+  ]
+}
