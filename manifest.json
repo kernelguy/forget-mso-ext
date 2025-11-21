@@ -1,5 +1,4 @@
 {
-
   "description": "Forget office.com cookies",
   "manifest_version": 2,
   "name": "forget-mso",
@@ -9,6 +8,17 @@
     "48": "icons/mso-trash.svg"
   },
 
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "@forget-mso",
+      "strict_min_version": "79.0",
+      "data_collection_permissions": {
+        "required": ["none"],
+        "optional": []
+      }
+    }
+  },
+  
   "background": {
     "scripts": ["forget-mso.js"]
   },
