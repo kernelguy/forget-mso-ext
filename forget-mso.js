@@ -19,8 +19,7 @@ function forget() {
   
   let types = {
     cookies: true,
-    localStorage: true,
-    passwords: true
+    localStorage: true
   }
   
   browser.browsingData.remove(options, types).then(onRemoved, onError);
